@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=8"/>-->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/parameters.css" />
+	<title>Street Generator</title>
+	<script type="text/javascript" src="../../../webdialog/js/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="../../../webdialog/js/base.js"></script>
+	<script type="text/javascript" src="js/params.js"></script>
+<head>
+<body scroll="no" border="none" innerBorder="no">
+
+
+<div id="illustration">
+	<img src="images/param_width.png" id="imgWidth" alt="Error Loading Image" title="" />
+	<img src="images/param_radius.png" id="imgRadius" alt="Error Loading Image" title="" />
+	<img src="images/param_corner_threshold.png" id="imgAngleThreshold" alt="Error Loading Image" title="" />
+	<img src="images/param_blocks.png" id="imgBlocks" alt="Error Loading Image" title="" />
+</div>
+
+<div id="params">
+
+
+<fieldset>
+	<legend>Default Street Dimension</legend>
+	
+	<label for="txtWidth">
+		<span class="label">Width:</span>
+		<input type="text" id="txtWidth" size="10" value="10000mm" />
+	</label>
+</fieldset>
+
+<fieldset>
+	<legend>Corner Rounding</legend>
+	
+	<label for="txtRadius">
+		<span class="label">Corner Radius:</span>
+		<input type="text" id="txtRadius" size="10" value="3000mm" />
+	</label>
+	<label for="txtAngleThreshold">
+		<span class="label">Angle Threshold:</span>
+		<input type="text" id="txtAngleThreshold" size="10" value="30" /> °
+		<span class="info">When the corner angle is above this threshold it will be rounded.</span>
+	</label>
+</fieldset>
+
+<fieldset>
+	<legend>Post Processing</legend>
+	
+	<label for="chkBlocks">
+		<span class="label">Create Blocks:</span>
+		<input type="checkbox" id="chkBlocks" />
+		<span class="info">Creates a group with faces of the blocks between the streets.</span>
+	</label>
+</fieldset>
+
+
+</div>
+
+<div class="footer">
+	<button id="cmdGenerate">Generate</button>
+	<button id="cmdCancel">Cancel</button>
+</div>
+
+</body>
+</html>

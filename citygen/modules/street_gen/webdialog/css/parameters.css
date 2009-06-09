@@ -1,0 +1,79 @@
+/*
+ * (!) Cleanup
+ */
+
+@import url('../../../../webdialog/css/ui.css');
+
+
+#illustration
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 235px;
+	background: #444;
+	
+	text-align: center;
+	padding-top: 5px;
+	
+	background: #444 url('../images/param_default.png') no-repeat 5px 5px;
+}
+#illustration img
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	display: none;
+}
+
+#params
+{
+	position: absolute;
+	left: 255px;
+	top: 0;
+	width: 230px;
+}
+
+#params label .info
+{
+	display: block;
+	color: #aaa;
+	padding: 2px 2px 2px 12px;
+	font-style: italic;
+}
+
+
+
+label
+{
+	display: block;
+	background: #555;
+}
+label:hover
+{
+	background: #666;
+}
+label .label
+{
+	float: left;
+	width: 90px;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.footer
+{
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+	right: 0px;
+	height: 20px;
+	border-top: 1px solid #333;
+	
+	background: #505050;
+	
+	padding: 5px;
+	
+	text-align: right;
+}

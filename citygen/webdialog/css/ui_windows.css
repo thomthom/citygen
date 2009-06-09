@@ -1,0 +1,77 @@
+html
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: ThreeDFace;
+	cursor: default;
+}
+body
+{
+	padding: 5px;
+	margin: 0;
+}
+html, input, select, textarea, button
+{
+	font: caption;
+}
+
+
+.toolbar
+{
+	margin: 5px 0;
+}
+.toolbar button
+{
+	padding: 4px 0;
+	border: 1px solid ThreeDFace;
+}
+.toolbar button:hover
+{
+	border-top: 1px solid ThreeDHighlight;
+	border-left: 1px solid ThreeDHighlight;
+	border-bottom: 1px solid ThreeDLightShadow;
+	border-right: 1px solid ThreeDLightShadow;
+}
+
+
+table.listview
+{
+	background: Window;
+	border: 2px inset ThreeDFace;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.listview thead
+{
+	font-weight: bold;
+	background: ThreeDLightShadow;
+}
+table.listview thead th
+{
+	border-bottom: 1px solid ThreeDShadow;
+	border-right: 1px solid ThreeDShadow;
+	border-left: 1px solid ThreeDLightShadow;
+	padding: 2px 7px;
+}
+table.listview thead th:hover
+{
+	background: ThreeDHighlight;
+}
+table.listview tbody
+{
+	cursor: auto;
+}
+table.listview tbody tr:hover
+{
+	background: #ffffee;
+}
+table.listview tbody tr.selected
+{
+	background: Highlight;
+	color: HighlightText;
+}
+table.listview tbody td
+{
+	padding: 1px 5px;
+}
