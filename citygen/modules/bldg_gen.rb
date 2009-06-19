@@ -8,10 +8,10 @@ module City_Gen
 
     menu.add_item("clf_highrise") { 
       model = Sketchup.active_model
-      ents = model.active_entities
+      sel = model.selection
       building_faces = []
-      ents.each { |e| building_faces << e if e.typename == "Face" }
-      min = "100m"
+      sel.each { |e| building_faces << e if e.typename == "Face" }
+      min = "50m"
       max = "500m"
       floor = "4m"
       citygen_highrise(building_faces, min, max, floor)
@@ -52,7 +52,7 @@ module City_Gen
 
     def self.jf_classic
       min = 300.feet
-      max = 500.feet
+      max = 1500.feet
       Helping_Hand.start_operation("JF Classic")
       Sketchup.active_model.selection.to_a.each do |face|
 	next unless face.is_a? Sketchup::Face
