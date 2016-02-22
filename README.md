@@ -1,4 +1,4 @@
-' Description
+# Description
 
 CityGen is an open source city generator for SketchUp. It is meant to be built upon by anyone who is interested in helping write the code!
 
@@ -6,5 +6,5 @@ CityGen is an open source city generator for SketchUp. It is meant to be built u
 * Remus Knowles
 * Chris Fullmer
 
-' License
+# License
 GNU GPL v3
