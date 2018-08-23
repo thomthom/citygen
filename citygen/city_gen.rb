@@ -44,16 +44,16 @@ require 'sketchup.rb'
 
 ### MODULES ### ------------------------------------------------------------------------------------
 module City_Gen
-	
+
 	# CONSTANTS
 	unless file_loaded?('city_gen.rb')
 		VERSION = '0.1.3'
 	end
-	
+
 	# VARIABLES
 	@menu = UI.menu('Tools').add_submenu('City Generator') unless file_loaded?('city_gen.rb')
 	@module_path = Sketchup.find_support_file('citygen/modules/', 'Plugins')
-	
+
 	# ACCESSORS
 	def self.menu
 		@menu
@@ -61,16 +61,16 @@ module City_Gen
 	def self.menu=(value)
 		@menu = value
 	end
-	
+
 	def self.module_path
 		@module_path
 	end
 	def self.module_path=(value)
 		@module_path = module_path
 	end
-	
+
 	### HELPER METHODS ### -------------------------------------------------------------------------
-		
+
 	module Helping_Hand
 		# Usage:
 		# Helping_Hand.start_operation('Operation Name')
@@ -86,10 +86,11 @@ module City_Gen
 			end
 		end
 	end # module Helping_Hand
-	
+
 	# MODULES
 	# We indicate that this file has now loaded, and try to load the modules.
 	file_loaded('city_gen.rb')
+	require 'citygen/street'
 	require_all(@module_path)
-	
+
 end # module City_Gen
